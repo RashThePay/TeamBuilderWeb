@@ -58,7 +58,7 @@ function App() {
   const clearFilters = () => { setQuery(''); setRace('All'); setBand('all'); setAdvanced({ className: '', feat: '', spell: '', minCr: '', maxCr: '', minHp: '', minAc: '', str: '', dex: '', con: '', int: '', wis: '', cha: '' }) }
   const totalCr = team.reduce((s, c) => s + c.cr, 0), totalHp = team.reduce((s, c) => s + c.hp, 0), isAdded = c => team.some(x => x.id === c.id)
   const toggle = c => setTeam(t => t.some(x => x.id === c.id) ? t.filter(x => x.id !== c.id) : t.length < 6 ? [...t, c] : t)
-  const copy = async () => { await navigator.clipboard.writeText(team.map(c => c.resref).join(', ')); setCopied(true); setTimeout(() => setCopied(false), 1800) }
+  const copy = async () => { await navigator.clipboard.writeText(team.map(c => c.resref).join(' ')); setCopied(true); setTimeout(() => setCopied(false), 1800) }
   return <div className="app-shell">
     <header className="topbar"><div className="brand-mark">N</div><div className="brand-copy"><span>Neverwinter Nights</span><strong>Warband Forge</strong></div><button className="party-button" onClick={() => setTeamOpen(true)}><Icon name="users" /><span>{team.length}/6</span></button></header>
     <main><section className="hero"><div className="hero-kicker"><i />Muster your party<i /></div><h1>Choose your <em>champions</em></h1><p>Build a warband worthy of legend.</p><div className="rune-divider">◆</div></section>
