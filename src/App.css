@@ -719,6 +719,8 @@ main {
     min-width: 0
 }
 
+.selected-count { position:absolute; z-index:2; top:8px; right:8px; min-width:25px; height:25px; padding:0 6px; display:grid; place-items:center; border-radius:14px; background:#b58e49; color:#111814; font:700 10px Inter; box-shadow:0 3px 10px #000 }
+
 .member-copy code {
     display: block;
     color: #d8bd7f;
