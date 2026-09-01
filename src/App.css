@@ -729,6 +729,12 @@ main {
     white-space: nowrap
 }
 
+.member-tactics { display:flex; flex-wrap:wrap; align-items:center; gap:3px; margin-top:5px }
+.member-tactics b { border:1px solid #d7ae6038; background:#202a24; color:#cdbd9b; padding:2px 5px; font:600 7px Inter; text-transform:lowercase }
+.member-tactics .selector-chip { border-color:#a27e3f88; color:#efcf8d }
+.member-tactics .behavior-chip i { color:#7f8178; font-style:normal; margin-right:4px }
+.member-tactics .native-ai-chip { color:#858b80; border-color:#d7ae6021; font-weight:500; text-transform:none }
+
 .team-member .edit-tactics {
     border: 1px solid #8c704066;
     background: #202a24;
@@ -791,8 +797,8 @@ main {
 .tactics-block select { width:100%; height:43px; padding:0 10px; border:1px solid #d7ae6030; background:#101713; color:#e2d9c6; text-transform:lowercase }
 .tactics-block select:disabled { opacity:.5 }
 .choice-help { margin:8px 2px 0; color:#8f9388; font-size:9px; line-height:1.45 }
-.preset-strip { display:flex; overflow-x:auto; gap:6px; padding-bottom:3px; scrollbar-width:none }
-.preset-strip button { flex:none; border:1px solid #8c704055; background:#1e2923; color:#cdbb96; padding:8px 10px; font-size:8px; text-transform:lowercase }
+.preset-strip { display:flex; flex-wrap:wrap; gap:6px; padding-bottom:3px }
+.preset-strip button { flex:none; border:1px solid #8c704055; background:#1e2923; color:#cdbb96; padding:8px 10px; font-size:8px }
 .behavior-stack { display:flex; flex-direction:column; gap:6px; margin-bottom:8px }
 .behavior-item { display:grid; grid-template-columns:24px minmax(0,1fr) auto; align-items:center; gap:8px; background:#101713; border:1px solid #d7ae6027; padding:8px }
 .behavior-item.terminal { border-color:#a65d4e88; background:#211916 }
