@@ -663,6 +663,15 @@ main {
     border: 0
 }
 
+.team-summary .rating-limit {
+    padding: 12px;
+    border-right: 1px solid var(--line)
+}
+
+.rating-limit>span { display:flex; align-items:baseline; gap:5px }
+.rating-limit input { width:48px; border:0; border-bottom:1px solid #8c704066; background:transparent; color:var(--gold); font:600 15px Cinzel; padding:1px 2px }
+.rating-limit input:focus { outline:1px solid #b58e4966 }
+
 .team-summary small {
     display: block;
     text-transform: uppercase;
@@ -780,6 +789,7 @@ main {
 .team-command small { display:block; color:#81867b; font-size:8px; margin-top:7px }
 .team-command small strong { color:var(--pale) }
 .copy-action.error { background:#633d35; color:#f4e5da; border-color:#a76658 }
+.rating-warning { margin:8px 0 0; border:1px solid #a76658; background:#3b2722; color:#f0c8b8; padding:9px 10px; font:600 9px/1.4 Inter }
 
 .tactics-overlay { z-index: 70; justify-content:center }
 .tactics-dialog { width:100%; max-height:94dvh; display:flex; flex-direction:column; background:#17201c; border-top:1px solid #a68140; box-shadow:0 -18px 60px #000 }
